@@ -405,51 +405,83 @@ const interactiveObjects = [];
 
 const wishList = [
   {
-    text: "Chúc bé Quỳnh xinh đẹp hôm nay làm việc thật nhẹ nhàng, bớt mệt mỏi và luôn giữ được nụ cười thật xinh.",
+    text: "Chúc bé Quỳnh xinh đẹp một ngày làm việc thật nhẹ nhàng, để nụ cười luôn ở lại trên môi dù công việc có bận rộn.",
     img: "./assets/1.jpg",
   },
   {
-    text: "Mong Quỳnh sau mỗi ngày làm việc đều có thời gian nghỉ ngơi, thư giãn và chăm sóc bản thân thật tốt.",
+    text: "Mong sau mỗi ngày dài, Quỳnh luôn có một khoảng trời riêng để nghỉ ngơi, thả lỏng và yêu chiều bản thân.",
     img: "./assets/2.jpg",
   },
   {
-    text: "Công việc có bận rộn đến đâu, mong Quỳnh vẫn luôn bình tĩnh, tự tin và hoàn thành mọi thứ thật tốt.",
+    text: "Công việc có nhiều đến đâu, mong Quỳnh vẫn bình tĩnh bước qua từng việc một, vì Quỳnh giỏi hơn mình nghĩ rất nhiều.",
     img: "./assets/3.jpg",
   },
   {
-    text: "Chúc Quỳnh luôn gặp may mắn trong công việc, mọi cố gắng đều được ghi nhận và đền đáp xứng đáng.",
+    text: "Chúc mọi nỗ lực thầm lặng của Quỳnh đều được nhìn thấy, trân trọng và đổi lại bằng những điều thật xứng đáng.",
     img: "./assets/1.jpg",
   },
   {
-    text: "Mong buổi tối của Quỳnh thật bình yên, mọi mệt mỏi trong ngày sẽ tan biến sau một giấc ngủ ngon.",
+    text: "Mong buổi tối của Quỳnh dịu dàng như ánh trăng, đủ bình yên để những mệt mỏi trong ngày dần tan đi.",
     img: "./assets/2.jpg",
   },
   {
-    text: "Chúc Quỳnh luôn có những ngày làm việc hiệu quả, những buổi chiều nhẹ nhàng và những tối thật thảnh thơi.",
+    text: "Chúc Quỳnh có những ngày làm việc thuận lợi, những buổi chiều nhiều nắng và những buổi tối thật thảnh thơi.",
     img: "./assets/3.jpg",
   },
   {
-    text: "Nhớ ăn uống đầy đủ, nghỉ ngơi đúng lúc nhé Quỳnh. Sức khỏe của Quỳnh luôn quan trọng hơn công việc.",
+    text: "Quỳnh nhớ ăn uống đầy đủ và nghỉ ngơi đúng lúc nhé. Không có thành công nào đáng để đánh đổi sự bình an của mình.",
     img: "./assets/1.jpg",
   },
   {
-    text: "Mong ánh trăng đêm nay mang đến cho Quỳnh một chút dịu dàng, để lòng nhẹ hơn sau một ngày dài.",
+    text: "Mong ánh trăng đêm nay gửi đến Quỳnh một chút dịu dàng, một chút may mắn và thật nhiều năng lượng mới.",
     img: "./assets/2.jpg",
   },
   {
-    text: "Chúc Quỳnh luôn bình an, vui vẻ và đủ mạnh mẽ để vượt qua những ngày công việc nhiều áp lực.",
+    text: "Chúc Quỳnh luôn bình an giữa những ngày bận rộn, mạnh mẽ khi cần và được sống thật nhẹ nhàng khi có thể.",
     img: "./assets/3.jpg",
   },
   {
-    text: "Chúc Quỳnh có một buổi tối thật vui, một món ăn ngon và một khoảng thời gian đủ yên để nạp lại năng lượng.",
+    text: "Chúc Quỳnh tối nay có món ăn mình thích, một giấc ngủ thật ngon và một ngày mai bắt đầu bằng thật nhiều niềm vui.",
     img: "./assets/1.jpg",
   },
   {
-    text: "Dù hôm nay có mệt thế nào, mong Quỳnh vẫn nhớ rằng mình đã cố gắng rất nhiều và xứng đáng được nghỉ ngơi.",
+    text: "Dù hôm nay có mệt thế nào, mong Quỳnh vẫn nhớ rằng mình đã cố gắng rất nhiều và xứng đáng với những điều tốt đẹp.",
     img: "./assets/2.jpg",
   },
   {
-    text: "Chúc những dự định của Quỳnh từng bước thành hiện thực, và trên hành trình ấy luôn có thật nhiều niềm vui.",
+    text: "Chúc những dự định của Quỳnh từng bước thành hiện thực, và hành trình ấy luôn có những niềm vui bất ngờ.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Mong Quỳnh luôn gặp những người tử tế, những chuyện vui và những ngày khiến mình mỉm cười thật tự nhiên.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Chúc trái tim Quỳnh luôn đủ ấm, tâm hồn luôn đủ vui và con đường phía trước luôn có ánh sáng dẫn lối.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Mong những điều khiến Quỳnh lo lắng sẽ sớm trở nên nhẹ tênh, để ngày nào cũng có thêm một lý do để vui.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Chúc Quỳnh luôn xinh đẹp theo cách riêng của mình, tự tin, rạng rỡ và không quên mỉm cười với cuộc sống.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Mỗi ngày của Quỳnh không cần hoàn hảo, chỉ cần đủ bình yên, đủ vui và có những người thật lòng quan tâm.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Chúc Quỳnh có thật nhiều khoảnh khắc nhỏ nhưng đáng nhớ, để những ngày bình thường cũng trở nên đặc biệt.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Mong Quỳnh luôn được yêu thương đúng cách, được lắng nghe khi mệt và được vui theo cách mình mong muốn.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Chúc Quỳnh hôm nay vui hơn hôm qua một chút, nhẹ lòng hơn hôm qua một chút và hạnh phúc hơn thật nhiều.",
     img: "./assets/1.jpg",
   },
 ];
