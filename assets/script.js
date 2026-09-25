@@ -508,6 +508,46 @@ const wishList = [
     text: "Quỳnh đăng ảnh đi nhé, để anh còn biết hôm nay cô gái anh quý mến đang xinh đẹp và vui vẻ thế nào.",
     img: "./assets/1.jpg",
   },
+  {
+    text: "Chúc Quỳnh mỗi ngày đều có một khoảnh khắc thật vui, dù chỉ là một ly nước ngon hay một bài hát yêu thích.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Mong Quỳnh luôn được sống đúng với điều mình muốn, làm điều mình thích và mỉm cười thật nhiều.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Chúc cô gái xinh đẹp của anh luôn có đủ năng lượng, đủ may mắn và đủ bình yên cho những ngày phía trước.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Mong những ngày mệt mỏi của Quỳnh sẽ qua thật nhanh, nhường chỗ cho những buổi tối nhẹ nhàng và vui vẻ.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Chúc Quỳnh luôn rạng rỡ, không chỉ trong những tấm ảnh mà còn trong từng khoảnh khắc bình thường của cuộc sống.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Nếu hôm nay công việc làm Quỳnh mệt, hãy nghỉ ngơi một chút nhé. Ngày mai mình lại xinh đẹp và tỏa sáng tiếp.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Chúc Quỳnh gặp thật nhiều chuyện vui, để mỗi lần mở điện thoại lên đều có lý do khiến mình mỉm cười.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Mong Quỳnh luôn được bao quanh bởi những điều tử tế và những người khiến Quỳnh cảm thấy mình thật đặc biệt.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Chúc Quỳnh có một trái tim thật nhẹ nhàng, một tinh thần thật vững vàng và một cuộc sống thật nhiều niềm vui.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Anh mong mỗi ngày Quỳnh đều xinh đẹp hơn một chút, vui vẻ hơn một chút và hạnh phúc hơn thật nhiều.",
+    img: "./assets/2.jpg",
+  },
 ];
 
 function createLanternTexture() {
