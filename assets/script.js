@@ -653,7 +653,7 @@ for (let i = 0; i < lanternCount; i++) {
     initialX: lantern.position.x,
     initialZ: lantern.position.z,
     wish: wishData.text,
-    imgUrl: wishData.img,
+    imgUrl: `./assets/${(i % 12) + 1}.jpg`,
     id: i,
   };
 
