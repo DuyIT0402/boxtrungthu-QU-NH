@@ -484,6 +484,30 @@ const wishList = [
     text: "Chúc Quỳnh hôm nay vui hơn hôm qua một chút, nhẹ lòng hơn hôm qua một chút và hạnh phúc hơn thật nhiều.",
     img: "./assets/1.jpg",
   },
+  {
+    text: "Quỳnh đăng ảnh nhiều hơn một chút nhé, để những ngày của anh cũng có thêm lý do để mỉm cười.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Em nhớ đăng ảnh thường xuyên nhé, để anh còn được ngắm cô gái xinh đẹp và đáng yêu nhất trong mắt anh.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Mỗi lần Quỳnh đăng ảnh là một lần newsfeed của anh bỗng trở nên vui vẻ và dịu dàng hơn hẳn.",
+    img: "./assets/1.jpg",
+  },
+  {
+    text: "Quỳnh cứ xinh đẹp như thế này thì đăng ảnh nhiều lên nhé, anh ngắm một chút rồi lại có thêm động lực làm việc.",
+    img: "./assets/2.jpg",
+  },
+  {
+    text: "Anh không cần điều gì quá lớn lao, chỉ cần thỉnh thoảng được thấy nụ cười của Quỳnh qua những tấm ảnh là đã vui rồi.",
+    img: "./assets/3.jpg",
+  },
+  {
+    text: "Quỳnh đăng ảnh đi nhé, để anh còn biết hôm nay cô gái anh quý mến đang xinh đẹp và vui vẻ thế nào.",
+    img: "./assets/1.jpg",
+  },
 ];
 
 function createLanternTexture() {
