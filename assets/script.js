@@ -855,13 +855,75 @@ window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeWishCard();
 });
 
-// AUDIO
+// AUDIO — PLAYLIST TRUNG THU
 const bgm = document.getElementById("bgm");
 const audioBtn = document.getElementById("audio-btn");
 let isPlaying = false;
 
+// Danh sách nhạc trong assets/music (bỏ file 1.mp3 nền cũ)
+const MUSIC_FILES = [
+  { src: "./assets/music/" + encodeURIComponent("Anh Đánh Rơi Người Yêu Này - Andiez ft. AMEE - OST #TTVKOBE.mp3"), title: "Anh Đánh Rơi Người Yêu Này", artist: "Andiez ft. AMEE" },
+  { src: "./assets/music/" + encodeURIComponent("Da LAB - Một Nhà (Official Lyric Video).mp3"), title: "Một Nhà", artist: "Da LAB" },
+  { src: "./assets/music/" + encodeURIComponent("Madihu - Có em (feat. Low G) [lyrics].mp3"), title: "Có em", artist: "Madihu ft. Low G" },
+  { src: "./assets/music/" + encodeURIComponent("Vũ - Bước qua mùa cô đơn [lyrics].mp3"), title: "Bước qua mùa cô đơn", artist: "Vũ" },
+  { src: "./assets/music/1.mp3", title: "Nhạc Trung Thu Nền", artist: "Playlist" },
+];
+
+let currentTrack = 0;
+
+const playlistPanel = document.getElementById("playlistPanel");
+const playlistList = document.getElementById("playlistList");
+const playlistBtn = document.getElementById("playlist-btn");
+const playlistClose = document.getElementById("playlistClose");
+
+
+function renderPlaylist() {
+  playlistList.innerHTML = "";
+  MUSIC_FILES.forEach((track, i) => {
+    const li = document.createElement("li");
+    li.className = "playlist-item" + (i === currentTrack ? " active" : "");
+    li.innerHTML =
+      '<span class="num">' + (i === currentTrack ? '<i class="fas fa-play" style="font-size:10px"></i>' : (i + 1)) + "</span>" +
+      '<span class="p-title"><strong>' + MUSIC_FILES[i].title + "</strong><br><small style=\"opacity:0.6\">" + MUSIC_FILES[i].artist + "</small></span>" +
+      '<span class="eq"><span></span><span></span><span></span><span></span></span>';
+    li.addEventListener("click", () => {
+      currentTrack = i;
+      isPlaying = false; // cho phép phát ngay cả khi đang phát bài khác
+      loadTrack(i);
+      startAudio();
+    });
+    playlistList.appendChild(li);
+  });
+}
+
+function loadTrack(i) {
+  bgm.src = MUSIC_FILES[i].src;
+  renderPlaylist();
+}
+
+loadTrack(0); // dựng playlist khi mở trang
+
+function nextTrack() {
+  currentTrack = (currentTrack + 1) % MUSIC_FILES.length;
+  const wasPlaying = isPlaying;
+  loadTrack(currentTrack);
+  if (wasPlaying) startAudio();
+}
+
+function prevTrack() {
+  currentTrack = (currentTrack - 1 + MUSIC_FILES.length) % MUSIC_FILES.length;
+  const wasPlaying = isPlaying;
+  loadTrack(currentTrack);
+  if (wasPlaying) startAudio();
+}
+
+bgm.addEventListener("ended", nextTrack);
+
+playlistBtn.addEventListener("click", () => playlistPanel.classList.toggle("open"));
+playlistClose.addEventListener("click", () => playlistPanel.classList.remove("open"));
+
 function startAudio() {
-  if (isPlaying) return;
+  if (!bgm.getAttribute("src")) loadTrack(currentTrack);
 
   bgm
     .play()
@@ -869,8 +931,18 @@ function startAudio() {
       isPlaying = true;
       audioBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
     })
-    .catch(() => {});
+    .catch((e) => {
+      isPlaying = false;
+      console.warn("Không phát được nhạc:", e && e.name);
+    });
 }
+
+bgm.addEventListener("pause", () => {
+  if (!bgm.ended) {
+    isPlaying = false;
+    audioBtn.innerHTML = '<i class="fas fa-music" style="opacity:0.5;"></i>';
+  }
+});
 
 audioBtn.addEventListener("click", () => {
   if (isPlaying) {

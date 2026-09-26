@@ -17,7 +17,21 @@
 
     <div class="top-bar">
         <button class="icon-btn" id="audio-btn" title="Bật/Tắt Nhạc"><i class="fas fa-music"></i></button>
+        <button class="icon-btn" id="playlist-btn" title="Danh sách nhạc" style="font-size:17px;">🎶</button>
         <button class="icon-btn" id="reset-cam-btn" title="Góc nhìn ban đầu"><i class="fas fa-compress-arrows-alt"></i></button>
+    </div>
+
+    <div class="playlist-panel" id="playlistPanel">
+        <div class="playlist-header">
+            <span class="playlist-moon">🌕</span>
+            <div>
+                <h3>Nhạc Trung Thu</h3>
+                <p>Danh sách bài hát · chạm để phát</p>
+            </div>
+            <button class="playlist-close" id="playlistClose" aria-label="Đóng"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="playlist-list" id="playlistList"></ul>
+        <div class="playlist-footer">✦ Trăng tròn · Đèn lồng · Âm nhạc ✦</div>
     </div>
 
     <div class="click-hint">Chạm vào lồng đèn nhé </div>
@@ -36,7 +50,7 @@
         </div>
     </div>
 
-    <audio id="bgm" loop src="./assets/1.mp3"></audio>
+    <audio id="bgm"></audio>
     
     
     <!-- Three.js & OrbitControls -->
